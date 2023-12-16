@@ -25,7 +25,7 @@ app.get("/:tweetId", async (req, res) => {
     }
   );
   const responseJson = await response.json();
-  return res.status(200).send({ data: responseJson });
+  return res.status(200).send({ tweetData: responseJson });
 });
 
 app.listen(4000, () => {
